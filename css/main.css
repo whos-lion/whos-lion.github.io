@@ -1,31 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: Cardo, serif;
+  font-size: 100%;
 }
 
-h1{
+h1 {
   font-size: 2em;
   display: flex;
   justify-content: center;
   padding: 10% 0 0 0;
-  }
+}
 
 p {
   font-size: 1em;
   text-align: center;
   padding: 5%
-}
-
-#myname{
-  background-color: Salmon;
-  display: flex;
-  height: 95vh;
-  justify-content: center;
-  align-items: center;
-  color: Seashell;
-  font-size: 10vw;
-  text-align: center;
-  font-weight: bold;
-  cursor: default;
 }
