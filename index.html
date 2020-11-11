@@ -6,9 +6,12 @@
     <title>whos lion</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap" rel="stylesheet">
-    <link rel="preload" href="/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/css/main.css"></noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="stylesheet" href="/css/main.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap">
+    </noscript>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-EYTGVZKDYR"></script>
     <script>
@@ -17,7 +20,27 @@
         gtag('js', new Date());
         gtag('config', 'G-EYTGVZKDYR');
     </script>
-    <style>#myname{background-color: Salmon;display: flex;height: 95vh;justify-content: center;align-items: center;color: Seashell;font-size: 10vw;text-align: center;font-weight: bold;cursor: default;}</style>
+    <style>
+        #myname {
+            background-color: Salmon;
+            display: flex;
+            height: 95vh;
+            justify-content: center;
+            align-items: center;
+            color: Seashell;
+            font-size: 10vw;
+            text-align: center;
+            font-weight: bold;
+            cursor: default;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Cardo, serif;
+            font-size: 100%;
+        }
+    </style>
 </head>
 
 <body>
