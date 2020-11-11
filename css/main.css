@@ -27,4 +27,5 @@ p {
   font-size: 10vw;
   text-align: center;
   font-weight: bold;
+  cursor: default;
 }
