@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function readTextFile(file) {
+            const rawFile = new XMLHttpRequest();
+            rawFile.open("GET", file, false);
+            rawFile.onreadystatechange = function () {
+                if (rawFile.readyState === 4) {
+                    if (rawFile.status === 200 || rawFile.status === 0) {
+                        const allText = rawFile.responseText;
+                        const lines = allText.split('\n');
+                        const list = document.createElement('ul');
+                        lines.forEach((line) => {
+                            const item = document.createElement('li');
+                            //item.innerText = line;
+                            const checkbox = document.createElement('input');
+                            checkbox.type = 'checkbox';
+                            item.appendChild(checkbox);
+                            item.innerHTML += ' ' + line;
+                            list.appendChild(item);
+                        });
+                        document.body.appendChild(list);
+                    }
+                }
+            };
+            rawFile.send(null);
+        }
+    </script>
+</head>
+
+<body onload="readTextFile('file.txt')">
+</body>
+
+</html>
