@@ -22,7 +22,7 @@
                             const checkbox = document.createElement('input');
                             checkbox.type = 'checkbox';
                             item.appendChild(checkbox);
-                            item.innerHTML += ' ' + line;
+                            item.innerHTML += line;
                             list.appendChild(item);
                         });
                         document.body.appendChild(list);
@@ -32,6 +32,12 @@
             rawFile.send(null);
         }
     </script>
+    <style>
+        li {
+            line-height: 1.5;
+            list-style: none;
+        }
+    </style>
 </head>
 
 <body onload="readTextFile('file.txt')" style="margin: 0;">
