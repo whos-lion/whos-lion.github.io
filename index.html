@@ -2,64 +2,60 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>whos lion</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap">
+  <meta charset="utf-8">
+  <title>lion's website</title>
+  <meta name="description" content="hi">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+  <style>
+    html {
+      background-color: rgb(0, 0, 0);
+    }
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYTGVZKDYR"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-EYTGVZKDYR');
-    </script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Cardo, serif;
-            font-size: 100%;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Gabarito, sans-serif;
+    }
 
-        h1 {
-            font-size: 2em;
-            display: flex;
-            justify-content: center;
-            padding: 10% 0 0 0;
-        }
+    a, p {
+      font-size: 3em;
+      text-align: center;
+      color: white;
+      font-weight: 400;
+      transition: 140ms;
+      transition-timing-function: ease;
+    }
 
-        p {
-            font-size: 1em;
-            text-align: center;
-            padding: 5%
-        }
+    a:hover,
+    a:focus,
+    a:active {
+      color: #0452b9;
+    }
 
-        #myname {
-            background-color: rgb(0, 0, 0);
-            display: flex;
-            height: 95vh;
-            justify-content: center;
-            align-items: center;
-            color: Seashell;
-            font-size: 10vw;
-            text-align: center;
-            font-weight: bold;
-            cursor: default;
-        }
-    </style>
+    #main {
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: inherit;
+    }
+
+    body {
+      height: 100vh;
+    }
+  </style>
 </head>
 
 <body>
-    <div id='myname'>
-        whos<br>lion
-    </div>
-    <h1>Hi,</h1>
-    <p>i'm a brazilian artist and designer trying to make cool things.</p>
-    <p>contact me @whos_lion on instagram and twitter</p>
+  <div id='main'>
+    <a href="https://twitter.com/whos_lion">twitter</a>
+    <a href="https://www.instagram.com/whos_lion/">instagram</a>
+    <a href="https://ko-fi.com/whoslion">ko-fi</a>
+  </div>
 </body>
 
 </html>
